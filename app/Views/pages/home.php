@@ -7,15 +7,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <title>Entreprise de Transit & Logistique au Sénégal | POLY-TRANS SUARL</title>
   <meta name="description" content="POLY-TRANS SUARL offre des services de transit, transport, manutention, consignation, entreposage et groupage au Sénégal. Contactez-nous pour des solutions logistiques sur mesure." />
-  <meta name="keywords" content="Transit, Transport, Manutention, Consignation, Entreposage, Groupage, Logistique, Sénégal" />
+  <meta name="keywords" content="Transit, POLYTRANS, Tracking, Livraisons, Transport, Tranking, Manutention, Consignation, Entreposage, Groupage, Logistique, Sénégal" />
   <meta name="author" content="Yankee" />
   <meta name="robots" content="index, follow" />
-  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" type="image/png" href="favicon.ico" />
   <meta property="og:title" content="POLY-TRANS SUARL - Votre partenaire en logistique au Sénégal" />
   <meta property="og:description" content="Offrant des services de transit, transport, manutention, consignation, entreposage, groupage et conseils sur mesure depuis 2017." />
   <meta property="og:image" content="<?= base_url('poly-trans.png') ?>" />
   <meta property="og:url" content="<?= base_url() ?>" />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="website"/>
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
   <?= $this->renderSection('css'); ?>
 </head>
 
-<body class=" bg-white position-relative">
+<body class="position-relative">
   <main>
 
     <section class="hero" style="background-image: url(<?= base_url('poly-trucks.png') ?>);">
@@ -35,7 +35,7 @@
 
         <div class="container">
           <div class="display-4 fw-bold text-center mb-3">Page en maintenance</div>
-          <div class="d-flex flex-column flex-md-row gap-2 justify-content-center">
+          <div class="d-flex flex-column flex-md-row gap-2 justify-content-center mb-3">
             <div class="text-white d-flex align-items-center gap-2 border rounded-3 p-3 justify-content-center">
               <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
@@ -57,6 +57,12 @@
               contact@poly-trans.sn
             </div>
           </div>
+          <a class="btn btn-primary d-flex gap-2 btn-lg py-3 justify-content-center align-items-center text-white m-auto" style="width: max-content" href="/tracking" role="button">
+            <svg stroke="#FFFFFF" fill="#FFFFFF" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#FFFFFF" stroke-width="2" d="M12,22 C12,22 4,16 4,10 C4,5 8,2 12,2 C16,2 20,5 20,10 C20,16 12,22 12,22 Z M12,13 C13.657,13 15,11.657 15,10 C15,8.343 13.657,7 12,7 C10.343,7 9,8.343 9,10 C9,11.657 10.343,13 12,13 L12,13 Z"></path>
+            </svg>
+            <span>Tracking</span>
+          </a>
         </div>
 
         <!-- <div class="container">
