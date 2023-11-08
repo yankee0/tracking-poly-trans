@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="<?= base_url('theme.css') ?>">
   <link rel="stylesheet" href="<?= base_url('style.css') ?>">
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
@@ -34,11 +35,11 @@
 
   <div class="container pt-5 px-3">
 
-    <h1>Tracking</h1>
-    <p class="fs-3">Page de suivie des expéditions des livraisons de POLY-TRANS SUARL.</p>
+    <h1 data-aos="fade-left">Tracking</h1>
+    <p data-aos="fade-left" data-aos-delay="100" class="fs-3">Page de suivie des expéditions des livraisons de POLY-TRANS SUARL.</p>
     <div class="row">
       <div id="app" class="col-12">
-        <div class="card">
+        <div data-aos="fade-up" data-aos-delay="200" class="card">
           <div class="card-body">
             <form v-on:submit.prevent="handleSubmit" action="#" method="POST">
               <div class=" d-flex gap-2">
@@ -58,13 +59,15 @@
             </form>
 
             <div v-if="isSearch">
-              <h3>Résultat pour <span class="text-primary text-uppercase">{{search}}</span></h3>
+              <div class="fade-up">
+                <h3>Résultat pour <span class="text-primary text-uppercase">{{search}}</span></h3>
+              </div>
               <div v-if="tcs.length == 0" class="alert alert-warning" role="alert">
                 <strong>Aucun résultat!</strong> Vérifiez l'orthographe et réessayez.
               </div>
               <div class=" d-flex row">
                 <div v-for="item in tcs" :key="item.id" class="col-lg-6 mb-3 d-flex">
-                  <div class="border p-3 rounded flex-fill">
+                  <div class="border p-3 rounded flex-fill fade-up">
                     <small>Nº Conteneur</small>
                     <h3>{{item.conteneur}}</h3>
                     <p>Facturé <strong class="text-primary">{{item.zone}}</strong> <span v-if="item.adresse">à l'adresse exacte <strong class=" text-primary">{{item.adresse}}</strong></span></p>
@@ -107,7 +110,7 @@
         </div>
       </div>
       <div class="col-12 mb-5">
-        <div class="accordion" id="accordionExample">
+        <div data-aos="fade-up" data-aos-delay="300" class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -156,9 +159,13 @@
   <script>
     const url = '<?= base_url() ?>';
   </script>
-  <script src="<?= base_url('tracking.js') ?>"></script>
+  <script src="<?= base_url('trackingModule.js') ?>"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
