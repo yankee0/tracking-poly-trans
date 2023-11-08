@@ -10,4 +10,9 @@ class Web extends BaseController
     {
         return view('pages/home');
     }
+
+    public function tracking()
+    {
+        return view('pages/tracking');
+    }
 }
