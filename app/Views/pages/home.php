@@ -23,6 +23,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="<?= base_url('theme.css') ?>">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="<?= base_url('style.css') ?>">
   <?= $this->renderSection('css'); ?>
 </head>
@@ -36,21 +37,21 @@
     <section class="hero" style="background-image: url(<?= base_url('poly-trucks.png') ?>);">
       <div class="container-fluid overlay text-white d-flex flex-column align-items-center justify-content-center p-3">
         <div class="container">
-          <div class="display-5 fw-bold text-center mb-3">Page en maintenance</div>
+          <div data-aos="fade-in" class="display-5 fw-bold text-center mb-3">Page en maintenance</div>
           <div class="d-flex flex-column flex-md-row gap-2 justify-content-center mb-3">
-            <a href="tel:(221)776500296" class="text-white d-flex align-items-center gap-2 border rounded-3 p-3 justify-content-center">
+            <a data-aos="fade-up" data-aos-delay="0" href="tel:(221)776500296" class="text-white d-flex align-items-center gap-2 border rounded-3 p-3 justify-content-center">
               <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
               </svg>
               77 650 02 96
             </a>
-            <a href="tel:(221)338425258" class="text-white d-flex align-items-center gap-2 border rounded-3 p-3 justify-content-center">
+            <a data-aos="fade-up" data-aos-delay="100" href="tel:(221)338425258" class="text-white d-flex align-items-center gap-2 border rounded-3 p-3 justify-content-center">
               <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
               </svg>
               33 842 52 58
             </a>
-            <a href="mailto:contact@poly-trans.sn" class="text-white d-flex align-items-center gap-2 border rounded-3 p-3 justify-content-center">
+            <a data-aos="fade-up" data-aos-delay="200" href="mailto:contact@poly-trans.sn" class="text-white d-flex align-items-center gap-2 border rounded-3 p-3 justify-content-center">
               <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M14 3H2a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM2 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H2z" clip-rule="evenodd"></path>
                 <path fill-rule="evenodd" d="M.071 4.243a.5.5 0 01.686-.172L8 8.417l7.243-4.346a.5.5 0 01.514.858L8 9.583.243 4.93a.5.5 0 01-.172-.686z" clip-rule="evenodd"></path>
@@ -59,7 +60,7 @@
               contact@poly-trans.sn
             </a>
           </div>
-          <a class="btn btn-primary d-flex gap-2 btn-lg py-3 justify-content-center align-items-center text-white m-auto" style="width: max-content" href="/tracking" role="button">
+          <a data-aos="flip-up" data-aos-delay="400" class="btn btn-primary d-flex gap-2 btn-lg py-3 justify-content-center align-items-center text-white m-auto" style="width: max-content" href="<?= base_url('tracking') ?>" role="button">
             <svg stroke="#FFFFFF" fill="#FFFFFF" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
               <path fill="none" stroke="#FFFFFF" stroke-width="2" d="M12,22 C12,22 4,16 4,10 C4,5 8,2 12,2 C16,2 20,5 20,10 C20,16 12,22 12,22 Z M12,13 C13.657,13 15,11.657 15,10 C15,8.343 13.657,7 12,7 C10.343,7 9,8.343 9,10 C9,11.657 10.343,13 12,13 L12,13 Z"></path>
             </svg>
@@ -122,6 +123,11 @@
 
   <?= $this->renderSection('body'); ?>
   <script src="<?= base_url('app.js') ?>"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <?= $this->renderSection('script'); ?>
 </body>
 

@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const handleChange = (e) => {
         e.preventDefault();
-        search = e.target.value;
+        search.value = e.target.value;
       };
 
       return {
